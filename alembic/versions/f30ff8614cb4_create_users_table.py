@@ -28,5 +28,6 @@ def upgrade():
     pass
 
 
-def downgrade() -> None:
+def downgrade():
+    op.drop_table('users')
     pass
